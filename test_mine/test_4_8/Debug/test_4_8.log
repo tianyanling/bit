@@ -1,0 +1,15 @@
+﻿生成启动时间为 2019/4/10 8:27:11。
+     1>项目“G:\VS2013\bit\test_4_8\test_4_8\test_4_8.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test_mine.c
+         test_mine.c
+     1>g:\vs2013\bit\test_4_8\test_4_8\test_mine.c(153): warning C4716: “Menu”: 必须返回一个值
+       Link:
+         G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\VS2013\bit\test_4_8\Debug\test_4_8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\VS2013\bit\test_4_8\Debug\test_4_8.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\VS2013\bit\test_4_8\Debug\test_4_8.lib" /MACHINE:X86 Debug\test_mine.obj
+         Debug\test_sl.obj
+         test_4_8.vcxproj -> G:\VS2013\bit\test_4_8\Debug\test_4_8.exe
+     1>已完成生成项目“G:\VS2013\bit\test_4_8\test_4_8\test_4_8.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.87
