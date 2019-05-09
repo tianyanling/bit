@@ -10,7 +10,7 @@
 
 int main()
 {
-	int n;
+	int i, n;
 	int count = 0;
 	printf("请输入一个不多于5位数的正整数：");
 	scanf("%d",&n);
@@ -20,10 +20,11 @@ int main()
 	}
 	while (n !=0)
 	{
+		i = n % 10;
 		n = n / 10;
 		count++;
 	}
-	printf("该数是%d位数\n",count);
+	printf("该数是%d位数\n输出的每个数字为%d\n",count,i);
 	system("pause");
 	return 0;
 }

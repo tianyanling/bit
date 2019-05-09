@@ -6,7 +6,7 @@
 #include<stdlib.h>
 
 
-int main4()
+int main()
 {
 	int a[10][10] = { 0 };
 	int x, y;
@@ -32,7 +32,7 @@ int main4()
 			}
 		}
 	}
-	printf("%d", a[x][y]);
+	printf("%d\n", a[x][y]);
 	system("pause");
 	return 0;
 }

@@ -23,12 +23,12 @@ void bubble(int data[], int num)
 		}
 	}
 }
-int main()
+int main3()
 {
 	int  n;
 	int num[20] = { 0 };
 	int i, sum = 0;
-	scanf("%d%d", &n);
+	scanf("%d", &n);
 	for (int i = 0; i < n; i++)
 	{
 		scanf("%d", num + i);
