@@ -21,7 +21,7 @@ void levo(char *pstr, int sz, int k)
 		}
 }
 
-int main1()
+int main()
 {
 	char str[] = "ABCD";
 	int k;

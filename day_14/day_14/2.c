@@ -1,6 +1,3 @@
-//2.判断一个字符串是否为另外一个字符串旋转之后的字符串。
-//例如：给定s1 = AABCD和s2 = BCDAA，返回1
-//给定s1 = abcd和s2 = ACBD，返回0.
 //AABCD左旋一个字符得到ABCDA
 //AABCD左旋两个字符得到BCDAA
 //AABCD右旋一个字符得到DAABC
@@ -36,10 +33,10 @@ void rightturn(char *pstr2, int sz2, int k2)
 	}
 }
 
-int main()
+int main2()
 {
 	char str1[] = "AABCD";
-	char str2[] = "AABCD";
+	char str2[] = "ABCDEF";
 	int k1,k2;
 	printf("	请输入需要左旋字符的个数：");
 	scanf("%d", &k1);
