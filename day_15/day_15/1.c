@@ -14,6 +14,7 @@ void find_num(int arr[], int  sz, int *num1, int * num2)
 	int tmp = 0;
 	*num1 = 0;
 	*num2 = 0;
+	//异或所有数字（二进制的情况下：相同的异或结果为0，不同的异或结果为1）
 	for (i = 0; i < sz; i++)
 	{
 		ret ^= arr[i];
@@ -29,9 +30,10 @@ void find_num(int arr[], int  sz, int *num1, int * num2)
 		ret = ret >> 1;   
 		++pos;
 	}
+	//分组
 	for (i = 0; i < sz; i++)
 	{
-		if ((arr[i] >> pos) & 1)//找出position位为1数的数
+		if ((arr[i] >> pos) & 1)//找出pos位为1数的数
 		{
 			*num1 ^= arr[i];
 		}
@@ -39,7 +41,7 @@ void find_num(int arr[], int  sz, int *num1, int * num2)
 	*num2 = *num1^tmp;
 }
 
-int main1()
+int main()
 {
 	int arr[] = { 1,2,5,8,4,6,1,2,5,4};
 	int sz = sizeof(arr) / sizeof(arr[0]);
