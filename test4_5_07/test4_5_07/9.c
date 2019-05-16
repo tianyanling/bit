@@ -10,21 +10,26 @@
 
 int main()
 {
-	int i, n;
+	int str[10];
+	int i=0, n;
 	int count = 0;
 	printf("请输入一个不多于5位数的正整数：");
 	scanf("%d",&n);
 	if (n > 9999 || n < 0)
 	{
 		printf("输入错误，请重新输入！\n");
+
 	}
+	printf("逆序的字符为：");
 	while (n !=0)
 	{
 		i = n % 10;
+		printf("%d", i);
 		n = n / 10;
 		count++;
 	}
-	printf("该数是%d位数\n输出的每个数字为%d\n",count,i);
+	printf("\n");
+	printf("该数是%d位数\n", count);
 	system("pause");
 	return 0;
 }
