@@ -16,4 +16,4 @@ int main2()
 	printf("%p\n", &test1);
 	system("pause");
 	return 0;
-}
+}
