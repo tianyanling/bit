@@ -1,0 +1,14 @@
+﻿生成启动时间为 2019/5/29 23:01:01。
+     1>项目“G:\Git\bit\bit_5_29\bit_5_29\bit_5_29.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt MailList.c func.c
+         func.c
+     1>g:\git\bit\bit_5_29\bit_5_29\maillist.h(7): error C2148: 数组的总大小不得超过 0x7fffffff 字节
+         MailList.c
+     1>g:\git\bit\bit_5_29\bit_5_29\maillist.h(7): error C2148: 数组的总大小不得超过 0x7fffffff 字节
+         正在生成代码...
+     1>已完成生成项目“G:\Git\bit\bit_5_29\bit_5_29\bit_5_29.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.64
