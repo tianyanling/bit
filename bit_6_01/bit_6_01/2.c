@@ -7,7 +7,7 @@
 #include<malloc.h>
 #define N 10
 
-int main()
+int main2()
 {
 	int *p = NULL;
 	int num;
