@@ -1,7 +1,5 @@
 //1.实现strcpy 
 
-//实现strcpy
-
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include<stdio.h>
@@ -24,7 +22,7 @@ char *my_strcpy(char *dst, const char *src)
 	return cpy;
 }
 
-int main()
+int main1()
 {
 	char a[20] = "abcde";
 	char *p = "123";
