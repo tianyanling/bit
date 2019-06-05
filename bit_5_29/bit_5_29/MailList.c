@@ -3,6 +3,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"MailList.h"
+#include<malloc.h>
+
+struct MailList  g_allMsg[1000];
+int g_count;
+//全局变量加g_,表示是全局变量(默认赋0)
+//static的全局变量加s_
 
 int menu()
 {
@@ -20,23 +26,40 @@ int menu()
 
 void MailList()
 {
+	char str[256] = { 0 };
 	int op;
-	op = menu();
-	switch (1)
+	while (1)
 	{
-	case ADD_MSG:
-		break;
-	case DELETE_MSG:
-		break;
-	case SEARCH_MSG:
-		break;
-	case CHANGE_MSG:
-		break;
-	case DISPLAY_MSG:
-		break;
-	case EMPTY_MSG:
-		break;
-	default:
-		printf("输入错误，请重新输入！\n");
+		op = menu();
+		switch (op)
+		{
+		case ADD_MSG:
+			inputData();
+			break;
+		case DELETE_MSG:
+			printf("请输入你要删除的条目：\n");
+			break;
+		case SEARCH_MSG:
+			printf("请输入要检索的字符串：\n");
+			scanf("%s", str);
+			searchData(str);
+			break;
+		case CHANGE_MSG:
+			break;
+		case DISPLAY_MSG:
+			outputData();
+			break;
+		case EMPTY_MSG:
+			break;
+		default:
+			printf("输入错误，请重新输入！\n");
+		}
 	}
+}
+
+int main()
+{
+	MailList();
+	system("pause");
+	return 0;
 }
