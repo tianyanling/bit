@@ -1,0 +1,38 @@
+﻿生成启动时间为 2019/5/8 8:32:39。
+     1>项目“G:\Git\bit\test_add\test_add\test_add.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test1.c
+         test1.c
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test2.cpp
+         test2.cpp
+     1>g:\git\bit\test_add\test_add\test2.cpp(16): error C2146: 语法错误: 缺少“;”(在标识符“Status”的前面)
+     1>g:\git\bit\test_add\test_add\test2.cpp(16): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>g:\git\bit\test_add\test_add\test2.cpp(16): error C2146: 语法错误: 缺少“;”(在标识符“InitStack”的前面)
+     1>g:\git\bit\test_add\test_add\test2.cpp(18): warning C4508: “InitStack”: 函数应返回一个值；假定“void”返回类型
+     1>g:\git\bit\test_add\test_add\test2.cpp(20): error C2146: 语法错误: 缺少“;”(在标识符“Push”的前面)
+     1>g:\git\bit\test_add\test_add\test2.cpp(20): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>g:\git\bit\test_add\test_add\test2.cpp(20): error C2086: “int Status”: 重定义
+                 g:\git\bit\test_add\test_add\test2.cpp(16) : 参见“Status”的声明
+     1>g:\git\bit\test_add\test_add\test2.cpp(34): error C2065: “OK”: 未声明的标识符
+     1>g:\git\bit\test_add\test_add\test2.cpp(36): error C2146: 语法错误: 缺少“;”(在标识符“OutputStack”的前面)
+     1>g:\git\bit\test_add\test_add\test2.cpp(36): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>g:\git\bit\test_add\test_add\test2.cpp(36): error C2086: “int Status”: 重定义
+                 g:\git\bit\test_add\test_add\test2.cpp(16) : 参见“Status”的声明
+     1>g:\git\bit\test_add\test_add\test2.cpp(46): warning C4508: “OutputStack”: 函数应返回一个值；假定“void”返回类型
+     1>g:\git\bit\test_add\test_add\test2.cpp(48): error C2146: 语法错误: 缺少“;”(在标识符“StackEmpty”的前面)
+     1>g:\git\bit\test_add\test_add\test2.cpp(48): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>g:\git\bit\test_add\test_add\test2.cpp(48): error C2086: “int Status”: 重定义
+                 g:\git\bit\test_add\test_add\test2.cpp(16) : 参见“Status”的声明
+     1>g:\git\bit\test_add\test_add\test2.cpp(50): error C2065: “OK”: 未声明的标识符
+     1>g:\git\bit\test_add\test_add\test2.cpp(52): error C2065: “ERROR”: 未声明的标识符
+     1>g:\git\bit\test_add\test_add\test2.cpp(55): error C2146: 语法错误: 缺少“;”(在标识符“Pop”的前面)
+     1>g:\git\bit\test_add\test_add\test2.cpp(55): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>g:\git\bit\test_add\test_add\test2.cpp(55): error C2086: “int Status”: 重定义
+                 g:\git\bit\test_add\test_add\test2.cpp(16) : 参见“Status”的声明
+     1>g:\git\bit\test_add\test_add\test2.cpp(58): error C2065: “ERROR”: 未声明的标识符
+     1>g:\git\bit\test_add\test_add\test2.cpp(66): error C2065: “OK”: 未声明的标识符
+     1>已完成生成项目“G:\Git\bit\test_add\test_add\test_add.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.40
