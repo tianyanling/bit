@@ -19,7 +19,7 @@ int my_strcmp(const char *str1, const char *str2)
 	return tmp;
 }
 
-int main()
+int main5()
 {
 	printf("%d\n", my_strcmp("ancd", "abcd"));
 	system("pause");

@@ -1,17 +1,18 @@
-﻿生成启动时间为 2019/6/8 18:36:53。
+﻿生成启动时间为 2019/6/9 18:19:36。
      1>项目“G:\Git\bit\day_18\day_18\day_18.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt 5.c
-         5.c
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt 6.c
+         6.c
        Link:
          G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Git\bit\day_18\Debug\day_18.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Git\bit\day_18\Debug\day_18.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Git\bit\day_18\Debug\day_18.lib" /MACHINE:X86 Debug\1.obj
          Debug\2.obj
          Debug\3.obj
          Debug\4.obj
          Debug\5.obj
+         Debug\6.obj
          day_18.vcxproj -> G:\Git\bit\day_18\Debug\day_18.exe
      1>已完成生成项目“G:\Git\bit\day_18\day_18\day_18.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.31
+已用时间 00:00:01.46
