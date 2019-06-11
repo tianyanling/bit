@@ -21,6 +21,9 @@
     <ClCompile Include="MailList.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MailLists.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MailList.h">

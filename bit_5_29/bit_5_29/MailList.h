@@ -29,6 +29,13 @@ struct MailList
 extern struct MailList g_allMsg[1000];
 extern int g_count;
 
+typedef struct
+{
+	struct MailList *alllMsg;
+	int count;
+	int limit;
+}MailLists;
+
 void inputData();
 int outputData();
 void searchData();

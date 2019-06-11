@@ -5,8 +5,8 @@
 #include"MailList.h"
 #include<malloc.h>
 
-struct MailList  g_allMsg[1000];
-int g_count;
+//struct MailList  g_allMsg[1000];
+//int g_count;
 //全局变量加g_,表示是全局变量(默认赋0)
 //static的全局变量加s_
 
