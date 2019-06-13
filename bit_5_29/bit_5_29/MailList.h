@@ -1,6 +1,6 @@
-
 #ifndef _MAILLIST_H_
 #define  _MAILLIST_H_  1000
+//可以让自己写的头文件多次引用而不出现重定义
 
 //extern int outputData();
 //extern void intputData();
@@ -18,7 +18,7 @@ enum
 
 struct MailList
 {
-	char name[20];
+	char name[50];
 	char sex;
 	char telnum[30];
 	char addr[200];
@@ -37,6 +37,10 @@ typedef struct
 }MailLists;
 
 void inputData();
-int outputData();
-void searchData();
+void outputData();
+void searchData(char *find);
+void outputSearchData(int *data);
+int catchOneData(char *find);
+void deleteOneData(int n);
+
 #endif

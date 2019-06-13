@@ -66,7 +66,7 @@
   <ItemGroup>
     <ClCompile Include="MailList.c" />
     <ClCompile Include="func.c" />
-    <ClCompile Include="MailLists.c" />
+    <ClCompile Include="MailLists.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MailList.h" />
