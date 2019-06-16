@@ -1,13 +1,17 @@
-﻿生成启动时间为 2019/6/1 10:28:59。
-     1>项目“G:\Git\bit\bit_6_1\bit_6_1\bit_6_1.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2019/6/16 18:40:23。
+     1>项目“G:\Git\bit\bit_maillist\bit_6_1\bit_6_1.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
          test.c
+     1>g:\git\bit\bit_maillist\bit_6_1\test.c(139): warning C4047: “函数”:“char”与“char [30]”的间接级别不同
+     1>g:\git\bit\bit_maillist\bit_6_1\test.c(139): warning C4024: “FindName”: 形参和实参 2 的类型不同
+     1>g:\git\bit\bit_maillist\bit_6_1\test.c(126): warning C4716: “IsEmpty”: 必须返回一个值
+     1>g:\git\bit\bit_maillist\bit_6_1\test.c(121): warning C4716: “FindName”: 必须返回一个值
        Link:
-         G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Git\bit\bit_6_1\Debug\bit_6_1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Git\bit\bit_6_1\Debug\bit_6_1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Git\bit\bit_6_1\Debug\bit_6_1.lib" /MACHINE:X86 Debug\test.obj
-         bit_6_1.vcxproj -> G:\Git\bit\bit_6_1\Debug\bit_6_1.exe
-     1>已完成生成项目“G:\Git\bit\bit_6_1\bit_6_1\bit_6_1.vcxproj”(Build 个目标)的操作。
+         G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Git\bit\bit_maillist\Debug\bit_6_1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Git\bit\bit_maillist\Debug\bit_6_1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Git\bit\bit_maillist\Debug\bit_6_1.lib" /MACHINE:X86 Debug\test.obj
+         bit_6_1.vcxproj -> G:\Git\bit\bit_maillist\Debug\bit_6_1.exe
+     1>已完成生成项目“G:\Git\bit\bit_maillist\bit_6_1\bit_6_1.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.93
+已用时间 00:00:01.09

@@ -136,7 +136,7 @@ void DelMailListInfo(MailList *ml)
 	}
 	printf("请输入要删除信息的姓名:\n");
 	scanf("%s", name);
-	int n = FindName(ml, name);
+	n = FindName(ml, name);
 	if (n == -1)
 	{
 		return;
@@ -149,14 +149,23 @@ void DelMailListInfo(MailList *ml)
 	ml->size++;
 }
 
+void DestoryMaillist(MailList *ml)
+{
+	assert(ml != NULL);
+	SaveMailList(ml);
+	free(ml->data);
+	ml->data = NULL;
+	ml->capacity = NULL;
+}
+
 void Test()
 {
 	MailList ml;
 	int input;
 	InitMailList(&ml);
-	menu();
 	do
 	{
+		menu();
 		printf("请输入要实现的功能：\n");
 		scanf("%d", &input);
 		switch (input)

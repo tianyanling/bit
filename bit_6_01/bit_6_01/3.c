@@ -65,16 +65,16 @@
 //}
 
 
-struct S
-{
-	int aa;
-	int arr[0];//柔性数组只能出现在结构的最后一个元素
-};
-
-int main()
-{
-	//printf("%d\n", sizeof(struct S));
-
-	system("pause");
-	return 0;
-}
+//struct S
+//{
+//	int aa;
+//	int arr[0];//柔性数组只能出现在结构的最后一个元素
+//};
+//
+//int main()
+//{
+//	//printf("%d\n", sizeof(struct S));
+//
+//	system("pause");
+//	return 0;
+//}

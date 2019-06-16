@@ -18,7 +18,7 @@ void *my_memcpy(void *dst, const void *src, size_t count)
 	while (slice--)*((char *)pintdst++) = *((char *)pintsrc++);
 	return dst;
 }
-int main()
+int main6()
 {
 	char a[20] = "abshdjbhcde";
 	char *p = "123";
