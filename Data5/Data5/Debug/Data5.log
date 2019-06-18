@@ -1,42 +1,49 @@
-﻿生成启动时间为 2019/6/17 23:35:21。
+﻿生成启动时间为 2019/6/18 20:49:49。
      1>项目“G:\Git\bit\Data5\Data5\Data5.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt 1.c
          1.c
-     1>g:\git\bit\data5\data5\1.c(49): warning C4047: “=”:“BiTree”与“ElemType”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(101): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(101): warning C4024: “InitStack”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(103): warning C4550: 表达式计算为缺少参数列表的函数
-     1>g:\git\bit\data5\data5\1.c(105): warning C4013: “visit”未定义；假设外部返回 int
-     1>g:\git\bit\data5\data5\1.c(108): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(108): warning C4024: “Push”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(113): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(113): warning C4024: “Pop”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(123): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(123): warning C4024: “InitStack”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(129): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(129): warning C4024: “Push”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(129): warning C4047: “函数”:“ElemType”与“BiTNode *”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(129): warning C4024: “Push”: 形参和实参 2 的类型不同
-     1>g:\git\bit\data5\data5\1.c(134): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(134): warning C4024: “Pop”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(148): warning C4550: 表达式计算为缺少参数列表的函数
-     1>g:\git\bit\data5\data5\1.c(152): warning C4047: “函数”:“ElemType”与“BiTNode *”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(152): warning C4024: “Push”: 形参和实参 2 的类型不同
-     1>g:\git\bit\data5\data5\1.c(157): warning C4047: “函数”:“ElemType *”与“BiTNode **”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(157): warning C4024: “GetTop”: 形参和实参 2 的类型不同
-     1>g:\git\bit\data5\data5\1.c(204): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(204): warning C4024: “PreOrder”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(209): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(209): warning C4024: “InOrder”: 形参和实参 1 的类型不同
-     1>g:\git\bit\data5\data5\1.c(214): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
-     1>g:\git\bit\data5\data5\1.c(214): warning C4024: “PostOrder”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(27): warning C4553: “==”: 运算符不起任何作用；是否是有意使用“=”的?
+     1>g:\git\bit\data5\data5\1.c(28): warning C4101: “p”: 未引用的局部变量
+     1>g:\git\bit\data5\data5\1.c(50): warning C4047: “=”:“BiTree”与“ElemType”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(101): warning C4047: “函数”:“BiTree”与“Node **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(101): warning C4024: “GreateBiTree”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(102): warning C4047: “函数”:“BiTree”与“Node **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(102): warning C4024: “GreateBiTree”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(105): warning C4098: “GreateBiTree”:“void”函数返回值
+     1>g:\git\bit\data5\data5\1.c(112): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(112): warning C4024: “InitStack”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(114): warning C4550: 表达式计算为缺少参数列表的函数
+     1>g:\git\bit\data5\data5\1.c(119): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(119): warning C4024: “Push”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(124): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(124): warning C4024: “Pop”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(135): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(135): warning C4024: “InitStack”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(141): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(141): warning C4024: “Push”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(141): warning C4047: “函数”:“ElemType”与“BiTNode *”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(141): warning C4024: “Push”: 形参和实参 2 的类型不同
+     1>g:\git\bit\data5\data5\1.c(147): warning C4047: “函数”:“SeqStack *”与“SeqStack **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(147): warning C4024: “Pop”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(162): warning C4550: 表达式计算为缺少参数列表的函数
+     1>g:\git\bit\data5\data5\1.c(166): warning C4047: “函数”:“ElemType”与“BiTNode *”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(166): warning C4024: “Push”: 形参和实参 2 的类型不同
+     1>g:\git\bit\data5\data5\1.c(171): warning C4047: “函数”:“ElemType *”与“BiTNode **”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(171): warning C4024: “GetTop”: 形参和实参 2 的类型不同
+     1>g:\git\bit\data5\data5\1.c(217): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(217): warning C4024: “GreateBiTree”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(221): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(221): warning C4024: “PreOrder”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(226): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(226): warning C4024: “InOrder”: 形参和实参 1 的类型不同
+     1>g:\git\bit\data5\data5\1.c(231): warning C4047: “函数”:“BiTree”与“BiTree *”的间接级别不同
+     1>g:\git\bit\data5\data5\1.c(231): warning C4024: “PostOrder”: 形参和实参 1 的类型不同
        Link:
          G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Git\bit\Data5\Debug\Data5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Git\bit\Data5\Debug\Data5.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Git\bit\Data5\Debug\Data5.lib" /MACHINE:X86 Debug\1.obj
-     1>1.obj : error LNK2019: 无法解析的外部符号 _visit，该符号在函数 _InOrder 中被引用
-     1>G:\Git\bit\Data5\Debug\Data5.exe : fatal error LNK1120: 1 个无法解析的外部命令
-     1>已完成生成项目“G:\Git\bit\Data5\Data5\Data5.vcxproj”(Build 个目标)的操作 - 失败。
+         Data5.vcxproj -> G:\Git\bit\Data5\Debug\Data5.exe
+     1>已完成生成项目“G:\Git\bit\Data5\Data5\Data5.vcxproj”(Build 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:01.25
+已用时间 00:00:02.10

@@ -24,7 +24,8 @@ typedef struct
 
 void InitStack(SeqStack *S)		//初始化栈
 {
-	S->top = -1;
+	S->top == -1;
+	BiTNode *p;
 }
 
 int Push(SeqStack *S, ElemType x)		//入栈
@@ -67,7 +68,7 @@ int GetTop(SeqStack *S, ElemType *x)		//取栈顶元素
 
 int IsEmpty(SeqStack *S)		//判空栈
 {
-	if (S->top == -1)
+	if (S->top = -1||S==NULL)
 	{
 		return TURE;
 	}
@@ -77,21 +78,31 @@ int IsEmpty(SeqStack *S)		//判空栈
 	}
 }
 
-void GreateBiTree(BiTree *bt)		//先序遍历创建二叉链表
+void visit(char ch)
+{
+	printf("%c ", ch);
+}
+
+void GreateBiTree(BiTree bt)		//先序遍历创建二叉链表
 {
 	char ch;
-	ch = getchar();
-	if (ch == '.')		// . 表示空子树
+	//ch = getchar;
+	scanf("%c", &ch);
+	while (ch == 0)
 	{
-		*bt = NULL;
+		if (ch == '.')		// . 表示空子树
+		{
+			bt = NULL;
+		}
+		else
+		{
+			bt = (BiTree)malloc(sizeof(BiTNode));
+			bt->data = ch;
+			GreateBiTree(&bt->LChild);
+			GreateBiTree(&bt->RChild);
+		}
 	}
-	else
-	{
-		*bt = (BiTree)malloc(sizeof(BiTNode));
-		(*bt)->data = ch;
-		GreateBiTree(&((*bt)->LChild));
-		GreateBiTree(&((*bt)->RChild));
-	}
+	return bt;
 }
 
 void PreOrder(BiTree root)		//先序遍历二叉树
@@ -111,6 +122,7 @@ void PreOrder(BiTree root)		//先序遍历二叉树
 		else
 		{
 			Pop(&S, &p);
+			printf("%c", p->data);
 			p = p->RChild;
 		}
 	}
@@ -127,12 +139,14 @@ void InOrder(BiTree root)		//中序遍历二叉树
 		if (p != NULL)
 		{
 			Push(&S, p);
+			visit(p->data);
 			p = p->LChild;
 		}
 		else
 		{
 			Pop(&S, &p);	
-			visit(p->data);
+			printf("%c", p->data); 
+			//visit(p->data);
 			p = p->RChild;
 		}
 	}
@@ -164,6 +178,7 @@ void PostOrder(BiTree root)		//后序遍历二叉树
 			}
 			else
 			{
+				printf("%c", p->data);
 				p = p->RChild;
 			}
 		}
@@ -172,13 +187,13 @@ void PostOrder(BiTree root)		//后序遍历二叉树
 
 void menu()
 {
-	printf("***************************************\n");
-	printf("***\t1.创建二叉链表\t***\n");
-	printf("***\t2.非递归先序遍历\t***\n");
-	printf("***\t3.非递归中序遍历\t***\n");
-	printf("***\t4.非递归后序遍历\t***\n");
-	printf("***\t0.退出系统\t***\n");
-	printf("***************************************\n");
+	printf("\t***********************************\n");
+	printf("\t***\t  1.创建二叉链表   \t***\n");
+	printf("\t***\t  2.非递归先序遍历\t***\n");
+	printf("\t***\t  3.非递归中序遍历\t***\n");
+	printf("\t***\t  4.非递归后序遍历\t***\n");
+	printf("\t***\t  0.退出系统          \t***\n");
+	printf("\t***********************************\n");
 	printf("\n");
 	printf("请输入选项：");
 }
@@ -187,6 +202,7 @@ int main()
 {
 	int n;
 	int m = 1;
+	char input;
 	BiTree *bt;
 	bt = NULL;
 	while (m)
@@ -197,10 +213,11 @@ int main()
 		{
 		case 1:
 			printf("请输入结点的前序序列创建二叉树: (. 表示空)\n ");
+			scanf("%s", &input);
 			GreateBiTree(bt);
 			break;
 		case 2:
-			printf("非递归法先序遍历二叉树\n");
+			printf("非递归法先序遍历二叉树:\n");
 			PreOrder(bt);
 			printf("\n");
 			break;
