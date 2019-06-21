@@ -1,4 +1,4 @@
-﻿生成启动时间为 2019/6/20 13:32:22。
+﻿生成启动时间为 2019/6/21 14:58:04。
      1>项目“G:\Git\bit\Data5\Data5\Data5.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt 3.c
@@ -11,4 +11,4 @@
 
 生成成功。
 
-已用时间 00:00:01.30
+已用时间 00:00:03.59

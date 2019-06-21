@@ -7,36 +7,36 @@
 #define MAXSIZE 100
 
 typedef char DataType;
-typedef struct BiTNode	/* 二叉链表存储结构 */
+typedef struct BiTNode	// 二叉链表存储结构 
 {
 	DataType data;
 	struct BiTNode *LChild;
 	struct BiTNode *RChild;
 }BiTree;
 
-typedef BiTree* ElemType;	/* 栈中数据元素类型，栈中保存结点指针 */
+typedef BiTree* ElemType;	// 栈中数据元素类型，栈中保存结点指针 
 typedef struct
 {
 	ElemType  data[MAXSIZE];
 	int top;
-}SeqStack;					/* 栈的类型定义，顺序栈 */
+}SeqStack;					//栈的类型定义，顺序栈 
 
-void InitSeqStack(SeqStack *S) /* 初始化栈 */
-{	 /* 首先建立栈空间，然后初始化栈顶指针 */
+void InitSeqStack(SeqStack *S) // 初始化栈 
+{	 // 首先建立栈空间，然后初始化栈顶指针 
 	S->top = -1;
 }
 
 void Push(SeqStack *S, ElemType x)
 {
 	if (S->top == MAXSIZE - 1)
-	{ /* 栈满不能入栈 */
+	{ // 栈满不能入栈 
 		printf("栈满\n");
 	}
 	S->top++;
 	S->data[S->top] = x;
 }
 
-void Pop(SeqStack *S) 	/* 出栈，假设栈不空 */
+void Pop(SeqStack *S) 	//出栈
 {
 	S->top--;
 }
@@ -53,12 +53,25 @@ int Empty(SeqStack *S)
 	}
 }
 
-ElemType Top(SeqStack *S)  /* 设栈不空 */
+ElemType Top(SeqStack *S)  
 {
 	return (S->data[S->top]);
 }
 
-/* 递归算法创建二叉链表 */
+int GetTop(SeqStack *S, ElemType *x)		//取栈顶元素
+{
+	if (S->top == -1)
+	{
+		return 0;
+	}
+	else
+	{
+		*x = S->data[S->top];
+		return 1;
+	}
+}
+
+//递归算法创建二叉链表 
 BiTree *GreateBiTree()
 {
 	DataType ch;
@@ -75,19 +88,6 @@ BiTree *GreateBiTree()
 		bt->LChild = GreateBiTree();
 		bt->RChild = GreateBiTree();
 		return bt;
-	}
-}
-
-int GetTop(SeqStack *S, ElemType *x)		//取栈顶元素
-{
-	if (S->top == -1)
-	{
-		return 0;
-	}
-	else
-	{
-		*x = S->data[S->top];
-		return 1;
 	}
 }
 
@@ -111,7 +111,7 @@ void PreOrder(BiTree *p)	//先序遍历二叉树
 	}
 }
 
-/* 中序遍历二叉树的非递归算法 */
+//中序遍历二叉树
 void InOrder(BiTree *p)
 {
 	SeqStack S; 
@@ -124,7 +124,7 @@ void InOrder(BiTree *p)
 		{ 
 			Push(&S, cur); 
 			cur = cur->LChild; 
-		}	/* 先将结点指针压栈，待出栈时再访问 */
+		}	// 先将结点指针压栈，待出栈时再访问 
 			if (Empty(&S))
 			{
 				break;
