@@ -1,0 +1,122 @@
+﻿生成启动时间为 2019/6/22 11:48:42。
+     1>项目“G:\Git\bit\bit_6_22\bit_6_22\bit_6_22.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c seqList.c
+         seqList.c
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(11): error C2061: 语法错误: 标识符“size_t”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(12): error C2061: 语法错误: 标识符“capacity”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(12): error C2059: 语法错误:“;”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(13): error C2059: 语法错误:“}”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(15): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(15): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(15): error C2146: 语法错误: 缺少“;”(在标识符“capacity”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(15): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(16): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(16): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(16): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(17): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(17): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(17): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(18): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(18): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(18): error C2370: “SLDataType”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(6) : 参见“SLDataType”的声明
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(18): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(18): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(19): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(19): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(19): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(20): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(20): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(20): error C2370: “SLDataType”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(6) : 参见“SLDataType”的声明
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(20): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(20): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(22): error C2370: “SLDataType”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(6) : 参见“SLDataType”的声明
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(22): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(23): error C2146: 语法错误: 缺少“;”(在标识符“pos”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(23): error C2059: 语法错误:“类型”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(24): error C2146: 语法错误: 缺少“;”(在标识符“pos”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(24): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(25): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(25): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(25): error C2370: “SLDataType”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(6) : 参见“SLDataType”的声明
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(25): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(25): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(26): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(26): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(26): error C2146: 语法错误: 缺少“;”(在标识符“pos”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(26): error C2059: 语法错误:“类型”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(26): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(27): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(27): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(27): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(28): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(28): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(28): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(29): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(29): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(29): error C2370: “SLDataType”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(6) : 参见“SLDataType”的声明
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(29): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(29): error C2059: 语法错误:“)”
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(31): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(31): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(31): error C2370: “SLDataType”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(6) : 参见“SLDataType”的声明
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(31): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\bit_6_22\bit_6_22\seqlist.h(31): error C2059: 语法错误:“)”
+     1>g:\vs2013\vc\include\crtdefs.h(496): warning C4142: 类型的良性重定义
+     1>g:\vs2013\vc\include\crtdefs.h(496): error C2370: “size_t”: 重定义；不同的存储类
+                 g:\git\bit\bit_6_22\bit_6_22\seqlist.h(15) : 参见“size_t”的声明
+     1>g:\vs2013\vc\include\crtdefs.h(503): error C2061: 语法错误: 标识符“rsize_t”
+     1>g:\vs2013\vc\include\crtdefs.h(503): error C2059: 语法错误:“;”
+     1>g:\vs2013\vc\include\stdio.h(222): error C2143: 语法错误 : 缺少“{”(在“__cdecl”的前面)
+     1>g:\vs2013\vc\include\stdio.h(222): error C2146: 语法错误: 缺少“)”(在标识符“_ElementSize”的前面)
+     1>g:\vs2013\vc\include\stdio.h(222): error C2081: “size_t”: 形参表中的名称非法
+     1>g:\vs2013\vc\include\stdio.h(222): error C2061: 语法错误: 标识符“_ElementSize”
+     1>g:\vs2013\vc\include\stdio.h(222): error C2059: 语法错误:“;”
+     1>g:\vs2013\vc\include\stdio.h(222): error C2059: 语法错误:“,”
+     1>g:\vs2013\vc\include\stdio.h(222): error C2059: 语法错误:“)”
+     1>g:\vs2013\vc\include\stdio.h(224): error C2143: 语法错误 : 缺少“{”(在“__cdecl”的前面)
+     1>g:\vs2013\vc\include\stdio.h(224): error C2146: 语法错误: 缺少“)”(在标识符“_DstSize”的前面)
+     1>g:\vs2013\vc\include\stdio.h(224): error C2081: “size_t”: 形参表中的名称非法
+     1>g:\vs2013\vc\include\stdio.h(224): error C2061: 语法错误: 标识符“_DstSize”
+     1>g:\vs2013\vc\include\stdio.h(224): error C2059: 语法错误:“;”
+     1>g:\vs2013\vc\include\stdio.h(224): error C2059: 语法错误:“,”
+     1>g:\vs2013\vc\include\stdio.h(224): error C2059: 语法错误:“)”
+     1>g:\vs2013\vc\include\stdio.h(246): error C2143: 语法错误 : 缺少“{”(在“__cdecl”的前面)
+     1>g:\vs2013\vc\include\stdio.h(246): error C2146: 语法错误: 缺少“)”(在标识符“_Size”的前面)
+     1>g:\vs2013\vc\include\stdio.h(246): error C2081: “size_t”: 形参表中的名称非法
+     1>g:\vs2013\vc\include\stdio.h(246): error C2061: 语法错误: 标识符“_Size”
+     1>g:\vs2013\vc\include\stdio.h(246): error C2059: 语法错误:“;”
+     1>g:\vs2013\vc\include\stdio.h(246): error C2059: 语法错误:“,”
+     1>g:\vs2013\vc\include\stdio.h(246): error C2059: 语法错误:“)”
+     1>g:\vs2013\vc\include\stdio.h(251): error C2146: 语法错误: 缺少“)”(在标识符“_Size”的前面)
+     1>g:\vs2013\vc\include\stdio.h(251): error C2081: “rsize_t”: 形参表中的名称非法
+     1>g:\vs2013\vc\include\stdio.h(251): error C2061: 语法错误: 标识符“_Size”
+     1>g:\vs2013\vc\include\stdio.h(251): error C2059: 语法错误:“;”
+     1>g:\vs2013\vc\include\stdio.h(251): error C2059: 语法错误:“)”
+     1>g:\vs2013\vc\include\stdio.h(296): error C2146: 语法错误: 缺少“)”(在标识符“_Size”的前面)
+     1>g:\vs2013\vc\include\stdio.h(296): error C2081: “size_t”: 形参表中的名称非法
+     1>g:\vs2013\vc\include\stdio.h(296): fatal error C1003: 错误计数超过 100；正在停止编译
+         main.c
+         正在生成代码...
+     1>已完成生成项目“G:\Git\bit\bit_6_22\bit_6_22\bit_6_22.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.51
