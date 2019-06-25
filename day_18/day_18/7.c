@@ -8,7 +8,6 @@
 #include<string.h>
 #include<assert.h>
 
-
 void* my_memmove(void* dst, const void* src, size_t count)
 {
 	assert(NULL != src && NULL != dst);
@@ -31,7 +30,6 @@ void* my_memmove(void* dst, const void* src, size_t count)
 			*tmpdst-- = *tmpsrc--;
 		}
 	}
-
 	return dst;
 }
 
