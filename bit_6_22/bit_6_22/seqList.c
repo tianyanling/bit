@@ -29,7 +29,7 @@ void CheckCapacity(SeqList* psl)
 	if (psl->size == psl->capacity)
 	{
 		psl->capacity *= 2;
-
+		psl->array = (SLDataType *)realloc(psl->array, psl->capacity * sizeof(SLDataType));
 	}
 }
 
@@ -149,3 +149,49 @@ void SeqListModify(SeqList* psl, size_t pos, SLDataType x)
 	psl->array[pos] = x;
 }
 
+void SeqListBubbleSort(SeqList* psl)
+{
+	assert(psl);
+
+	int i, j;
+	SLDataType tmp;
+	//冒泡排序
+	for (i = 0; i < psl->size - 1; i++)
+	{
+		for (j = 0; j < psl->size - 1-i ; j++)
+		{
+			if (psl->array[j] > psl->array[j + 1])
+			{
+				tmp = psl->array[j];
+				psl->array[j] = psl->array[j + 1];
+				psl->array[j + 1] = tmp;
+			}
+		}
+	}
+}
+
+int SeqListBinaryFind(SeqList* psl, SLDataType x)
+{//不要在代码块内部定义变量
+	assert(psl);
+
+	int left = 0;
+	int right = psl->size - 1;
+	int mid;
+
+	while (left <= right)
+	{
+		mid = (left + right) / 2;
+		if (psl->array[mid] < x)
+		{
+			left = mid + 1;
+		}
+		else if (psl->array[mid]>x)
+		{
+			right = mid - 1;
+		}
+		else
+		{
+			return mid;
+		}
+	}
+}
