@@ -1,0 +1,12 @@
+﻿生成启动时间为 2019/7/9 18:13:31。
+     1>项目“G:\Git\bit\bit_7_09\bit_7_09\bit_7_09.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test2.c
+         test2.c
+     1>g:\git\bit\bit_7_09\bit_7_09\test2.c(66): error C2374: “a”: 重定义；多次初始化
+                 g:\git\bit\bit_7_09\bit_7_09\test2.c(65) : 参见“a”的声明
+     1>已完成生成项目“G:\Git\bit\bit_7_09\bit_7_09\bit_7_09.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.59
