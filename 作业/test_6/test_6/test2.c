@@ -20,7 +20,7 @@ void inc()
 	return;
 }
 
-int main()
+int main2()
 {
 #if 0
 	int a = 2, i, k;
@@ -31,7 +31,7 @@ int main()
 	printf("%d\n", k);
 #endif
 
-#if 1
+#if 0
 	int i;
 	for (i = 1; i < x; i++)
 	{

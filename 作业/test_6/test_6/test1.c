@@ -11,7 +11,7 @@ int fun(int a, int b)
 		return (a-b);
 }
 
-int main()
+int main1()
 {
 #if 0
 	int x = 3, y = 8, z = 6, r;
