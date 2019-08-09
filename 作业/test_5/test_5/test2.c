@@ -21,7 +21,7 @@ void GlobalInit(unsigned long ulArg)
 	ulArg  = 0x01;
 	return;
 }
-int main()
+int main2()
 {
 	//printf("fun(2017)=%d\n", fun(2019));
 

@@ -12,7 +12,7 @@ int fun(int x, int y)
 	return m;
 }
 
-int main()
+int main4()
 {
 	int j = 4;
 	int m = 1;

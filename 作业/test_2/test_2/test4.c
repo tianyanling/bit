@@ -4,16 +4,16 @@
 #include<stdlib.h>
 #include<assert.h>
 
-int replace(char *arr)
+int replace(char arr[])
 {
-	char* ret = arr;
+	char *ret = arr;
 	int count = 0;//计算有几个空格
 	int newlen = 0;//新字符串的长度
 	int oldlen = 0;//原来字符串的长度
-	char * q = arr;
+	char *q = arr;
 	char * r;
 	assert(arr != NULL);
-	while (arr != '\0')
+	while (*arr != '\0')
 	{
 		if (*arr == ' ')
 		{
@@ -22,7 +22,7 @@ int replace(char *arr)
 		oldlen++;
 		arr++;
 	}
-	arr = q;
+
 	newlen = oldlen + 2 * count;
 	q = arr + oldlen - 1;
 	r = arr + newlen - 1;
@@ -43,12 +43,11 @@ int replace(char *arr)
 	}
 	return ret;
 }
-	
+
 int main()
 {
 	char arr[20] = "abc defgx yz";
 	printf("%s\n", replace(arr));
-	printf("\n");
 	system("pause");
 	return 0;
 }

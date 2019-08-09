@@ -4,7 +4,7 @@
 #include<stdlib.h>
 #define MOD(x,y) x%y
 
-int main()
+int main2()
 {
 #if 0
 	int a = 13, b = 94;
