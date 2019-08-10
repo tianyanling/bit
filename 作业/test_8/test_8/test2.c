@@ -4,7 +4,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-int main()
+int main2()
 {
 #if 0
 	int s = 0, n;
