@@ -33,6 +33,7 @@ int main()
 }
 #endif
 
+#if 0
 int main()
 {
 	char a[1000];
@@ -45,3 +46,4 @@ int main()
 	system("pause");
 	return 0;
 }
+#endif
