@@ -1,3 +1,4 @@
+//Ë³Ðò±í
 #ifndef _SEQLIST_H_
 #define _SEQLIST_H_
 
