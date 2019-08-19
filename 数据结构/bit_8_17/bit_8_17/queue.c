@@ -15,17 +15,16 @@ void QueueInit(Queue* plist)
 
 int QueueIsEmpty(Queue * plist)
 {
-	return plist->_head == NULL;
+	return plist->_head == NULL;//头指针为空，即队列为空
 }
 
 void QueuePush(Queue* plist, QuDataType x)
 {
 	assert(plist);
 
-	QueueNode * cur = (QueueNode *)malloc(sizeof(QueueNode));
+	QueueNode * cur = (QueueNode *)malloc(sizeof(QueueNode));//申请一个动态空间
 	cur->_data = x;
-	cur->_next = plist->_head;
-	plist->_head = cur;
+	cur->_next = NULL;
 
 	if (QueueIsEmpty(plist))
 	{

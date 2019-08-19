@@ -1,9 +1,8 @@
-﻿生成启动时间为 2019/8/18 16:28:58。
+﻿生成启动时间为 2019/8/19 10:34:31。
      1>项目“G:\Git\bit\数据结构\bit_8_17\bit_8_17\bit_8_17.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
-         main.c
-     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\main.c(26): warning C4047: “=”:“int”与“BTNode *”的间接级别不同
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt BTree.c
+         BTree.c
        Link:
          G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.lib" /MACHINE:X86 Debug\BTree.obj
          Debug\main.obj
@@ -14,4 +13,4 @@
 
 生成成功。
 
-已用时间 00:00:01.09
+已用时间 00:00:01.20

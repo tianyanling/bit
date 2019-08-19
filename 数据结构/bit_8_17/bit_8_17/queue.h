@@ -1,27 +1,11 @@
-#ifndef _SEQLIST_H_
-#define _SEQLIST_H_
+#ifndef _QUEUE_H_
+#define _QUEUE_H_
+
+#include"BTree.h"
 
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<assert.h>
+typedef BTNode * QuDataType;
 
-/*
-链表如何遍历
-（1）单向不带头
-for(cur = head; cur; cur = cur->next)
-{
-cur;
-}
-
-（2）双向带头
-for(cur = head->next; cur != head; cur =cur->next)
-{
-cur;
-}
-*/
-
-typedef int QuDataType;
 typedef struct QueueNode
 {
 	QuDataType _data;
@@ -39,5 +23,6 @@ void QueueDestory(Queue* plist);
 void QueuePush(Queue* plist, QuDataType x);
 void QueuePop(Queue* plist);
 int QueueIsEmpty(Queue* plist);
+QuDataType QueueTop(Queue* plist);
 
-#endif
+#endif/*_QUEUE_H_*/

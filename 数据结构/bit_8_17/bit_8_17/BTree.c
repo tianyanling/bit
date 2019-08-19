@@ -71,38 +71,48 @@ int BinaryTreeSize(BTNode* root)
 	return count;
 }
 
-//每一层结点的个数
-int BinaryTreeLevelKSize(BTNode* root, int k)
-{
-
-}
-
-
-BTNode* BinaryTreeFind(BTNode* root, BTDataType x)
-{
-	if (root ==NULL)
-	{
-		return;
-	}
-	if (root->data == x)
-	{
-		return root;
-	}
-	if (x > root->data)
-	{
-		return BinaryTreeFind(&root->rchild, x);
-	}
-	else
-	{
-		return BinaryTreeFind(&root->lchild, x);
-	}
-}
+//第k层结点的个数
+//int BinaryTreeLevelKSize(BTNode* root, int k)
+//{
+//	if (root)
+//	{
+//		BinaryTreeLevelKSize(root->lchild,k);
+//		BinaryTreeLevelKSize(root->rchild, k);
+//	}
+//
+//	int i;
+//	for (i = 0; i < k; i++)
+//	{
+//		if ()
+//	}
+//}
+//
+//
+//int BinaryTreeFind(BTNode* root, BTDataType x)
+//{
+//	if (root ==NULL)
+//	{
+//		return;
+//	}
+//	if (root->data == x)
+//	{
+//		return root;
+//	}
+//	if (x > root->data)
+//	{
+//		return BinaryTreeFind(&root->rchild, x);
+//	}
+//	else
+//	{
+//		return BinaryTreeFind(&root->lchild, x);
+//	}
+//}
 
 // 递归遍历
 //前序遍历
 void BinaryTreePrevOrder(BTNode* root)
 {
-	if (root)
+	if (root)//如果root为空，则不需要遍历它的左右孩子
 	{
 		putchar(root->data);
 		BinaryTreePrevOrder(root->lchild);
@@ -142,7 +152,7 @@ void BinaryTreeLevelOrder(BTNode* root)
 
 	QueueInit(&qu);
 
-	QueuePush(&qu, root);
+	QueuePush(&qu, root);//头结点入队
 
 	while (!QueueIsEmpty(&qu))
 	{
@@ -167,6 +177,8 @@ void BinaryTreeLevelOrder(BTNode* root)
 }
 // 判断二叉树是否是完全二叉树
 int BinaryTreeComplete(BTNode* root);
+
+//非递归先序遍历
 void BinaryTreePrevOrderNonR(BTNode* root)
 {
 	Stack st;
@@ -195,6 +207,32 @@ void BinaryTreePrevOrderNonR(BTNode* root)
 	}
 	StackDestory(&st);
 }
-void BinaryTreeInOrderNonR(BTNode* root);
+
+//非递归中序遍历
+void BinaryTreeInOrderNonR(BTNode* root)
+{
+	BTNode* cur = root;
+	Stack st;
+	StackInit(&st, 100);
+
+	while (1)
+	{
+		for ( ; cur; cur = cur->lchild)
+		{
+			StackPush(&st, cur);
+		}
+
+		cur = StackTop(&st);
+		if (!cur)
+		{
+			break;
+		}
+		putchar(cur->data);
+		StackPop(&st);
+		cur = cur->rchild;
+	}
+	StackDestory(&st);
+}
+
 void BinaryTreePostOrderNonR(BTNode* root);
 void TestBinaryTree();

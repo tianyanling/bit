@@ -12,7 +12,7 @@ typedef struct BinaryTreeNode
 
 // 通过前序遍历的数组"ABD##E#H##CF##G##"构建二叉树
 BTNode* BinaryTreeCreate(BTDataType* src);
-void BinaryTreeDestory(BTNode** root);
+void BinaryTreeDestory(BTNode* root);
 int BinaryTreeSize(BTNode* root);
 int BinaryTreeLeafSize(BTNode* root);
 int BinaryTreeLevelKSize(BTNode* root, int k);
