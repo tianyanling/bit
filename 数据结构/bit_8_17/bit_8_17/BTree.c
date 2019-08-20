@@ -86,27 +86,6 @@ int BinaryTreeSize(BTNode* root)
 //		if ()
 //	}
 //}
-//
-//
-//int BinaryTreeFind(BTNode* root, BTDataType x)
-//{
-//	if (root ==NULL)
-//	{
-//		return;
-//	}
-//	if (root->data == x)
-//	{
-//		return root;
-//	}
-//	if (x > root->data)
-//	{
-//		return BinaryTreeFind(&root->rchild, x);
-//	}
-//	else
-//	{
-//		return BinaryTreeFind(&root->lchild, x);
-//	}
-//}
 
 // 递归遍历
 //前序遍历
@@ -142,7 +121,6 @@ void BinaryTreePostOrder(BTNode* root)
 	}	
 }
 
-// 非递归遍历
 // 层序遍历
 void BinaryTreeLevelOrder(BTNode* root)
 
@@ -154,11 +132,54 @@ void BinaryTreeLevelOrder(BTNode* root)
 
 	QueuePush(&qu, root);//头结点入队
 
+	while (!QueueIsEmpty(&qu))//队列为空时，跳出循环
+	{
+		cur = QueueTop(&qu);//取出队头结点
+
+		putchar(cur->data);
+
+		if (cur->lchild)//有左孩子，左孩子就入队
+		{
+			QueuePush(&qu, cur->lchild);
+		}
+
+		if (cur->rchild)//有右孩子，右孩子就入队
+		{
+			QueuePush(&qu, cur->rchild);
+		}
+
+		QueuePop(&qu);//队首元素出队
+	}
+
+	QueueDestory(&qu);//有初始化就有销毁
+}
+
+// 判断二叉树是否是完全二叉树
+int BinaryTreeComplete(BTNode* root)
+{
+	Queue qu;
+	BTNode * cur;
+	int tag = 0;
+
+	QueueInit(&qu);
+
+	QueuePush(&qu, root);
+
 	while (!QueueIsEmpty(&qu))
 	{
 		cur = QueueTop(&qu);
 
 		putchar(cur->data);
+
+		if (cur->rchild && !cur->lchild)
+		{
+			return 0;
+		}
+
+		if (tag && (cur->rchild || cur->lchild))
+		{
+			return 0;
+		}
 
 		if (cur->lchild)
 		{
@@ -169,33 +190,36 @@ void BinaryTreeLevelOrder(BTNode* root)
 		{
 			QueuePush(&qu, cur->rchild);
 		}
+		else
+		{
+			tag = 1;
+		}
 
 		QueuePop(&qu);
 	}
 
 	QueueDestory(&qu);
+	return 1;
 }
-// 判断二叉树是否是完全二叉树
-int BinaryTreeComplete(BTNode* root);
 
 //非递归先序遍历
 void BinaryTreePrevOrderNonR(BTNode* root)
 {
 	Stack st;
-	BTNode * cur = root;
+	BTNode * cur = root;//从根开始
 
 	StackInit(&st, 100);
 
 	while (cur)
 	{
-		putchar(cur->data);
+		putchar(cur->data);//访问当前结点
 
 		if (cur->rchild)//如果有右孩子就进栈
 		{
 			StackPush(&st, cur->rchild);
 		}
 
-		if (cur->lchild)//如果有左孩子就直接输出左孩子
+		if (cur->lchild)//如果有左孩子就访问左孩子
 		{
 			cur = cur->lchild;
 		}
@@ -211,28 +235,69 @@ void BinaryTreePrevOrderNonR(BTNode* root)
 //非递归中序遍历
 void BinaryTreeInOrderNonR(BTNode* root)
 {
-	BTNode* cur = root;
+	BTNode * cur = root;
+
 	Stack st;
 	StackInit(&st, 100);
 
-	while (1)
+	while (cur || !StackIsEmpty(&st))
 	{
-		for ( ; cur; cur = cur->lchild)
+		for (; cur; cur = cur->lchild)//将当前结点及他的左孩子们入栈
 		{
 			StackPush(&st, cur);
 		}
 
 		cur = StackTop(&st);
-		if (!cur)
-		{
-			break;
-		}
+		//1、如果右孩子为空，for循环不进，直接取栈顶
+		//2、如果右孩子不为空，那么这是一个没有左孩子的二叉树
+		//第一种情况为左子树访问完毕，第二种情况是左子树为空，无论是哪一种情况，当前结点都要打印
 		putchar(cur->data);
 		StackPop(&st);
-		cur = cur->rchild;
+		cur = cur->rchild;//当右子树为空时，检查栈
 	}
+
 	StackDestory(&st);
 }
 
-void BinaryTreePostOrderNonR(BTNode* root);
+void BinaryTreePostOrderNonR(BTNode* root)
+{
+	char tag[64];
+
+	BTNode * cur = root;
+
+	Stack st;
+	StackInit(&st, 100);
+
+	do{
+		for (; cur; cur = cur->lchild)//类似中序
+		{
+			StackPush(&st, cur);
+			tag[st.size - 1] = 0;//重置左子树的访问标记（LT）
+		}
+
+		while (!StackIsEmpty(&st) && tag[st.size - 1])//前面的条件只在最后一次循环跳出的时候生效
+		{
+			cur = StackTop(&st);
+			putchar(cur->data);
+			StackPop(&st);
+		}
+
+		if (!StackIsEmpty(&st))
+		//此条件只在最后一次循环跳出的时候生效
+		//后面的条件分两个情况
+		//1、当此次的cur为空时，上面的for不进，此条件成立
+		//2、当cur不为空时，上面的for进，此条件不成立
+		//当检测到当前的LT被置位（情况1），那么打印当前节点后，再去直接检查上一个结点（父节点）是不是也要被打印了，
+		{
+			cur = StackTop(&st);
+			//1、如果上面的while进了，那么证明左子树访问完毕
+			//2、如果上面的while每进，那么证明没有左子树
+			tag[st.size - 1] = 1;
+			cur = cur->rchild;
+			//左子树访问完毕后，访问右子树
+		}
+	} while (!StackIsEmpty(&st));//由于后序遍历根结点是左后出栈的，所以在根结点出栈前，栈不可能为空，所以栈空为循环跳出条件
+
+	StackDestory(&st);
+}
 void TestBinaryTree();

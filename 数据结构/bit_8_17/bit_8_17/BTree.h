@@ -1,6 +1,9 @@
 #ifndef _BTREE_H_
 #define  _BTREE_H_
 
+#include"queue.h"
+#include"stack.h"
+
 typedef char BTDataType;
 
 typedef struct BinaryTreeNode
@@ -16,7 +19,6 @@ void BinaryTreeDestory(BTNode* root);
 int BinaryTreeSize(BTNode* root);
 int BinaryTreeLeafSize(BTNode* root);
 int BinaryTreeLevelKSize(BTNode* root, int k);
-BTNode* BinaryTreeFind(BTNode* root, BTDataType x);
 
 // ±éÀú
 void BinaryTreePrevOrder(BTNode* root);

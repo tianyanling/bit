@@ -1,16 +1,235 @@
-﻿生成启动时间为 2019/8/19 10:34:31。
+﻿生成启动时间为 2019/8/20 8:48:13。
      1>项目“G:\Git\bit\数据结构\bit_8_17\bit_8_17\bit_8_17.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt BTree.c
+         G:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt BTree.c main.c queue.c stack.c
+         stack.c
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(7): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(11): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(11): error C2061: 语法错误: 标识符“QuDataType”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(13): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(17): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(17): error C2061: 语法错误: 标识符“QueueNode”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(18): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(19): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2040: “QuDataType”:“int”与“int *”的间接寻址级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2061: 语法错误: 标识符“QueueTop”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2059: 语法错误:“;”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2059: 语法错误:“)”
+         queue.c
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(10): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(13): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(13): error C2061: 语法错误: 标识符“StDataType”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(16): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): warning C4142: 类型的良性重定义
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2370: “size_t”: 重定义；不同的存储类
+                 g:\vs2013\vc\include\crtdefs.h(496) : 参见“size_t”的声明
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2146: 语法错误: 缺少“;”(在标识符“capacity”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2040: “StDataType”:“int”与“int *”的间接寻址级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2061: 语法错误: 标识符“StackTop”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2059: 语法错误:“;”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2059: 语法错误:“)”
+         main.c
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(7): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(11): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(11): error C2061: 语法错误: 标识符“QuDataType”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(13): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(17): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(17): error C2061: 语法错误: 标识符“QueueNode”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(18): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(19): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2040: “QuDataType”:“int”与“int *”的间接寻址级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2061: 语法错误: 标识符“QueueTop”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2059: 语法错误:“;”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(10): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(13): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(13): error C2061: 语法错误: 标识符“StDataType”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(16): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): warning C4142: 类型的良性重定义
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2370: “size_t”: 重定义；不同的存储类
+                 g:\vs2013\vc\include\crtdefs.h(496) : 参见“size_t”的声明
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2146: 语法错误: 缺少“;”(在标识符“capacity”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2040: “StDataType”:“int”与“int *”的间接寻址级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2061: 语法错误: 标识符“StackTop”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2059: 语法错误:“;”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2059: 语法错误:“)”
          BTree.c
-       Link:
-         G:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.lib" /MACHINE:X86 Debug\BTree.obj
-         Debug\main.obj
-         Debug\queue.obj
-         Debug\stack.obj
-         bit_8_17.vcxproj -> G:\Git\bit\数据结构\bit_8_17\Debug\bit_8_17.exe
-     1>已完成生成项目“G:\Git\bit\数据结构\bit_8_17\bit_8_17\bit_8_17.vcxproj”(Build 个目标)的操作。
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(7): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(11): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(11): error C2061: 语法错误: 标识符“QuDataType”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(13): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(17): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(17): error C2061: 语法错误: 标识符“QueueNode”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(18): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(19): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2040: “QuDataType”:“int”与“int *”的间接寻址级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(24): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(25): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2061: 语法错误: 标识符“QueueTop”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2059: 语法错误:“;”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\queue.h(26): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(10): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(13): error C2016: C 要求一个结构或联合至少有一个成员
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(13): error C2061: 语法错误: 标识符“StDataType”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(16): error C2059: 语法错误:“}”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): warning C4142: 类型的良性重定义
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2370: “size_t”: 重定义；不同的存储类
+                 g:\vs2013\vc\include\crtdefs.h(496) : 参见“size_t”的声明
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2146: 语法错误: 缺少“;”(在标识符“capacity”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(19): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(20): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2040: “StDataType”:“int”与“int *”的间接寻址级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(21): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(22): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2061: 语法错误: 标识符“StackTop”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2059: 语法错误:“;”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(23): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\stack.h(24): error C2059: 语法错误:“)”
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(128): error C2065: “Queue”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(128): error C2146: 语法错误: 缺少“;”(在标识符“qu”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(128): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(131): warning C4013: “QueueInit”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(131): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(133): warning C4013: “QueuePush”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(133): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(135): warning C4013: “QueueIsEmpty”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(135): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(137): warning C4013: “QueueTop”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(137): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(137): warning C4047: “=”:“BTNode *”与“int”的间接级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(143): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(148): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(151): warning C4013: “QueuePop”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(151): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(154): warning C4013: “QueueDestory”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(154): error C2065: “qu”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(163): error C2065: “Stack”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(163): error C2146: 语法错误: 缺少“;”(在标识符“st”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(163): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(166): warning C4013: “StackInit”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(166): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(174): warning C4013: “StackPush”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(174): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(183): warning C4013: “StackTop”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(183): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(183): warning C4047: “=”:“BTNode *”与“int”的间接级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(184): warning C4013: “StackPop”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(184): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(187): warning C4013: “StackDestory”未定义；假设外部返回 int
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(187): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(194): error C2065: “Stack”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(194): error C2146: 语法错误: 缺少“;”(在标识符“st”的前面)
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(194): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(195): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(201): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(204): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(204): warning C4047: “=”:“BTNode *”与“int”的间接级别不同
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(210): error C2065: “st”: 未声明的标识符
+     1>g:\git\bit\数据结构\bit_8_17\bit_8_17\btree.c(213): error C2065: “st”: 未声明的标识符
+         正在生成代码...
+     1>已完成生成项目“G:\Git\bit\数据结构\bit_8_17\bit_8_17\bit_8_17.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:01.20
+已用时间 00:00:00.94

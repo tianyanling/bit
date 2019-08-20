@@ -7,7 +7,7 @@
 #include <assert.h>
 #include "BTree.h"
 
-typedef BTNode * StDataType;
+typedef BTNode* StDataType;
 
 typedef struct Stack {
 	StDataType* array;	// 指向动态开辟的数组
@@ -18,10 +18,9 @@ typedef struct Stack {
 // 基本增删查改接口
 void StackInit(Stack* psl, size_t capacity);
 void StackDestory(Stack* psl);
-
 void StackPush(Stack* psl, StDataType x);
 void StackPop(Stack* psl);
 StDataType StackTop(Stack* psl);
 int StackIsEmpty(Stack* psl);
 
-#endif //_Stack_H_
+#endif  /*_Stack_H_*/

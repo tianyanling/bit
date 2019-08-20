@@ -4,7 +4,7 @@
 #include"BTree.h"
 
 
-typedef BTNode * QuDataType;
+typedef BTNode* QuDataType;
 
 typedef struct QueueNode
 {

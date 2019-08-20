@@ -3,6 +3,7 @@
 
 #include"BTree.h"
 #include"queue.h"
+#include"stack.h"
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -20,13 +21,11 @@ int main()
 	BinaryTreePostOrder(root);
 	putchar('\n');
 	BinaryTreeLevelOrder(root);
-	putchar('\n');
+	putchar('\n'); 
 	n = BinaryTreeLeafSize(root);
 	printf("%d\n", n);
 	m = BinaryTreeSize(root);
 	printf("%d\n", m);
-	//s = BinaryTreeFind(root, 1);
-	//printf("%c\n", s);
 	BinaryTreeInOrderNonR(root);
 	putchar('\n');
 	
