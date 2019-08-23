@@ -7,9 +7,9 @@
 //
 //int main()
 //{
-	//int a = 5, b = 7;
-	//int max = (a + b + abs(a - b)) / 2;
-	//printf("%d\n",max);
+//int a = 5, b = 7;
+//int max = (a + b + abs(a - b)) / 2;
+//printf("%d\n",max);
 //}
 
 #if 0
@@ -25,7 +25,7 @@ int main()
 	printf("n = %d,m = %d\n", n, m);//n=8,m=8
 	n = strlen(a);
 	m = strlen(b);
-	printf("n = %d, m = %d\n",n,m);//n=7,m=3
+	printf("n = %d, m = %d\n", n, m);//n=7,m=3
 
 	system("pause");
 	return 0;
@@ -78,7 +78,7 @@ int main()
 int main()
 {
 	char a = 258;//存储1 00000010     输出结果取低位的八位
-	printf("%d\n",a);
+	printf("%d\n", a);
 	system("pause");
 	return 0;
 }
