@@ -17,20 +17,28 @@ void printArray(int *src, int n)
 
 int main()
 {
-#if 1
-	int src[10] = { 1,3,6,7,9,2,4,8,10,5 };
+#if 0
+	int src[10] = { 1,3,6,7,9,2,4,8,10,5};
 
-	//InsertSort(src, 10);
+	//SelectSort(src, 11);
 
-	//ShellSort(src, 10);
+	//BubbleSort(src, 11);
 
-	//MergeSort(src, 10);
+	//InsertSort(src, 11);
 
-	QuickSort(src, 10);
+	//ShellSort(src, 11);
+
+	//MergeSort(src, 11);
+
+	//QuickSort(src, 11);
+
+	//QuickSortNonR(src, 11);
+
+	HeapSort(src, 10);
 
 	printArray(src, 10);
 #else
-	srand(time(NULL));//设置随机种子
+	srand((unsigned int)time(NULL));//设置随机种子
 
 	int src[BUFSIZE];
 
@@ -40,13 +48,21 @@ int main()
 		src[i] = rand() % 5000 + 1;
 	}
 
+	//BubbleSort(src, BUFSIZE);
+
+	//SelectSort(src, BUFSIZE);
+
 	//InsertSort(src, BUFSIZE);
 
 	//ShellSort(src, BUFSIZE);
 
 	//MergeSort(src, BUFSIZE);
 
-	QuickSort(src, BUFSIZE);
+	//QuickSort(src, BUFSIZE);
+
+	//QuickSortNonR(src, BUFSIZE);
+
+	HeapSort(src, BUFSIZE);
 
 	printArray(src, BUFSIZE);
 #endif
