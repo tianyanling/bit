@@ -6,7 +6,7 @@
 
 int omain()
 {
-	int data[10] = { 5,2,4,6,7,1,3,9,8,10};
+	int data[10] = { 5,2,4,6,7,1,3,9,8,10 };
 	Heap hp;
 
 	//HeapInit(&hp, data, 10);
