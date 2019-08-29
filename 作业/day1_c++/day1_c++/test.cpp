@@ -7,18 +7,18 @@ using namespace std;
 
 /*void InsertSort(int *src, int n)
 {
-	int i, j;
-	int tmp;
-	for (i = 1; i < n; i++)
-	{
-		tmp = src[i];
+int i, j;
+int tmp;
+for (i = 1; i < n; i++)
+{
+tmp = src[i];
 
-		for (j = i; j > 0 && src[j - 1] > tmp; j--)
-		{
-			src[j] = src[j - 1];
-		}
-		src[j] = tmp;
-	}
+for (j = i; j > 0 && src[j - 1] > tmp; j--)
+{
+src[j] = src[j - 1];
+}
+src[j] = tmp;
+}
 }*/
 
 void InsertSort(float *src, int n)
@@ -42,7 +42,7 @@ bool cmpnum(int a, int b)
 	return a < b;
 }
 
-void InsertSort(int *src, int n, bool (*cmp)(int,int) = cmpnum)
+void InsertSort(int *src, int n, bool(*cmp)(int, int) = cmpnum)
 {
 	int i, j;
 	int tmp;
@@ -50,7 +50,7 @@ void InsertSort(int *src, int n, bool (*cmp)(int,int) = cmpnum)
 	{
 		tmp = src[i];
 
-		for (j = i; j > 0 && cmp(tmp,src[j-1]); j--)//对cmp回调
+		for (j = i; j > 0 && cmp(tmp, src[j - 1]); j--)//对cmp回调
 		{
 			src[j] = src[j - 1];
 		}
