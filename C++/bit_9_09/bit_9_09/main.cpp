@@ -1,18 +1,23 @@
-#include"coordinate.h"
+#include"date.h"
 
 int main()
 {
-	Coordinate coor(2, 4);
+	Date d(2, 4);
 
-	cout << coor.Getx() << ',' << coor.Gety() << endl;
+	cout << d.Getx() << ',' << d.Gety() << endl;
 
-	cout << -coor.Getx() << ',' << -coor.Gety() << endl;//-
+	--d;
+	cout << d.Getx() << ',' << d.Gety() << endl;//前置--
 
-	++coor;
-	cout << coor.Getx() << ',' << coor.Gety() << endl;//前置++
+	cout << d--.Getx() << ',';
+	cout << d--.Gety() << endl;//后置--
 
-	cout << coor++.Getx() << ',';
-	cout << coor++.Gety() << endl;//后置++
+	++d;
+	cout << d.Getx() << ',' << d.Gety() << endl;//前置++
+
+	cout << d++.Getx() << ',';
+	cout << d++.Gety() << endl;//后置++
+
 	system("pause");
 	return 0;
 }
