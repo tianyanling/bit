@@ -1,9 +1,9 @@
-//erase
+//vector实现erase
 #include<iostream>
 #include<vector>
 using namespace std;
 
-int main()
+int main2()
 {
 #if 0
 	//方法一（删除一个元素）
@@ -41,7 +41,6 @@ int main()
 		++it;
 	}
 	cout << endl;
-
 #endif
 
 	system("pause");

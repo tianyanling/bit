@@ -48,7 +48,7 @@ int main1()
 	cout << endl;
 #endif
 
-#if 0
+#if 1
 	//方法三（插入一个范围内的所有元素）
 	// iterator insert (const_iterator position, InputIterator first, InputIterator last)
 	//在position处插入[first，last)间的元素，first和last需在同一个vector中，返回值为position
