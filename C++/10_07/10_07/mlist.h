@@ -232,9 +232,9 @@ public:
 	iterator erase(iterator start, iterator finish)
 	{
 		iterator i;
-		for (i = start; i != finish; i++)
+		while ( i != finish)
 		{
-			erase(i);
+			i = erase(i);
 		}
 
 		return res;
