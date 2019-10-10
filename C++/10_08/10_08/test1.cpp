@@ -1,7 +1,7 @@
 //两个栈实现队列
 #include<iostream>
 #include<queue>
-#include<stack>
+#include<stack> 
 using namespace std;
 
 void change(stack<int> *s1, stack<int> *s2)
@@ -13,6 +13,7 @@ void change(stack<int> *s1, stack<int> *s2)
 		s1->pop();
 	}
 }
+
 class MyQueue
 {
 	stack<int> *obj;
@@ -37,7 +38,7 @@ public:
 		return p;
 	}
 
-	int peek() 
+	int front() 
 	{
 		stack<int> *tmp = new stack<int>;
 		change(obj, tmp);
@@ -52,7 +53,7 @@ public:
 	}
 };
 
-int main1()
+int main()
 {
 	queue<int> q;
 	q.push(2);
