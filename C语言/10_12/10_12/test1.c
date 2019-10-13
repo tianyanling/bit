@@ -2,13 +2,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main1()
+int main()
 {
 	struct S1
 	{
 		char c1;//1
 		int i;//8
 		char c2;//12
+		int e;//16
 	};
 	//printf("%d\n", sizeof(struct S1));
 
@@ -34,7 +35,7 @@ int main1()
 	struct S3 s3;//24
 	double d;//32
 	};
-	//printf("%d\n", sizeof(struct S4));
+	printf("%d\n", sizeof(struct S4));
 
 	struct S5
 	{
@@ -54,7 +55,7 @@ int main1()
 		int _c : 10;
 		int _d : 30;
 	};
-	printf("%d\n", sizeof(struct A));
+	//printf("%d\n", sizeof(struct A));
 	system("pause");
 	return 0;
 }

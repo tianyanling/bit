@@ -14,7 +14,7 @@ char *GetMemory2(void)
 	return p;
 }
 
-int main()
+int main2()
 {
 	/*char *str = NULL;
 	GetMemory1(str);
