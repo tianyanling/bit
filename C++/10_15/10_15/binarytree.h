@@ -262,6 +262,31 @@ namespace tdd
 			cout << t1->m_val << endl;
 			cout << t2->m_val;
 		}
+
+		BTNode<T> * Mirror(BTNode *Root)
+		{
+			BTNode<T> * cur = m_root;
+			if (!cur)
+			{
+				return;
+			}
+
+			if (cur->m_left == nullptr && cur->m_right == nullptr)
+			{
+				return;
+			}
+
+			swap(cur->m_left, cur->m_right);
+
+			Mirror(cur->m_left);
+			Mirror(cur->m_right);
+		}
+
+		void test1()
+		{
+			BTNode<T> * t = Mirror(m_root);
+			cout << t->m_val;
+		}
 	};
 	
 };

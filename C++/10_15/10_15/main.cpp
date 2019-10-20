@@ -15,7 +15,7 @@ int main()
 	tr.post_order();
 	cout << endl;
 
-	tr.test();
+	tr.test1();
 	cout << endl;
 
 	system("pause");
