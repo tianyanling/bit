@@ -2,7 +2,7 @@
 using namespace std;
 
 //ÀûÓÃĞ´Ê±¿½±´
-template<class T>
+/*template<class T>
 class smart_ptr
 {
 	T * m_ptr;
@@ -68,7 +68,7 @@ public:
 	int *  m_a;
 };
 
-int main()
+int main4()
 {
 	smart_ptr<Test> sp(new Test);
 
@@ -77,4 +77,4 @@ int main()
 
 	system("pause");
 	return 0;
-}
+}*/

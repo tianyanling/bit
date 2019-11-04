@@ -1,3 +1,5 @@
+//auto_ptr
+
 #include<iostream>
 #include<memory>
 using namespace std;
