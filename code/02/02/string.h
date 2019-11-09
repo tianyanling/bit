@@ -3,7 +3,11 @@
 #pragma once
 #include<cstring>
 #include<cstdlib>
+#include<iostream>
+using namespace std;
+
 #define DEFAULTCAPA 16
+#define COUNTCAPA(size) (((size) / DEFAULTCAPA + 1)*DEFAULTCAPA)
 
 class String
 {
@@ -16,13 +20,11 @@ public:
 	{
 		if (nullptr == str)
 		{
-			m_size = 0;
+			str = "";
 		}
-		else
-		{
-			m_size = strlen(str);
-		}
-		capacity(m_size);
+
+		m_size = strlen(str);
+		m_capacity = COUNTCAPA(m_size);
 		m_data = new char[m_capacity];
 		strncpy(m_data, str, m_size);//防止m_data为空
 	}
@@ -38,19 +40,17 @@ public:
 
 	String(size_t n, char ch):
 		m_size(n),
-		m_capacity(DEFAULTCAPA)
+		m_capacity(COUNTCAPA(n))
 	{
-		capacity(m_size);
-
 		m_data = new char[m_capacity];
 		memset(m_data, ch, m_size);//memset是进行初始化
 	}
 
-	void capacity(size_t size)
+	void reserve(size_t size)
 	{
 		if (size >= m_capacity)
 		{
-			m_capacity = (size / DEFAULTCAPA + 1)*DEFAULTCAPA;//扩容
+			m_capacity = COUNTCAPA(size);//扩容
 			m_data = (char *)realloc(m_data, m_capacity);
 		}
 	}
@@ -64,4 +64,39 @@ public:
 		}
 		m_size = m_capacity = 0; 
 	}
+
+	friend ostream & operator<<(ostream & os, const String &s);
+	friend istream & operator >> (istream & is, String &s);
 };
+
+ostream & operator<<(ostream & os, const String &s)
+{
+	int i;
+
+	for (i = 0; i < s.m_size; i++)
+	{
+		os << s.m_data[i];
+	}
+	return os;
+}
+
+istream & operator >> (istream & is, String &s)
+{
+	char * tmp = new char[1024];
+	is.getline(tmp, 1024);
+
+	s.m_size = strlen(tmp);
+	s.m_capacity = COUNTCAPA(s.m_size);
+	delete[]s.m_data;
+	s.m_data = tmp;
+
+	return is;
+}
+
+
+
+
+
+
+
+
