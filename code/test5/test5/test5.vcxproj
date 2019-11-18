@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{43592508-067A-4B4B-9602-EE43257CFC87}</ProjectGuid>
-    <RootNamespace>My04</RootNamespace>
+    <ProjectGuid>{870D8AA9-5C84-4B85-AFB1-83C6FB5AB422}</ProjectGuid>
+    <RootNamespace>test5</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,7 +110,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main1.cpp" />
+    <ClCompile Include="t1.cpp" />
+    <ClCompile Include="t2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
