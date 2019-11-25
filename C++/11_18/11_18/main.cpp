@@ -1,5 +1,6 @@
 #include"binarySortTree.h"
 #include<iostream>
+#include<stdlib.h>
 using namespace std;
 
 int main()
@@ -14,7 +15,6 @@ int main()
 	bst.insert(7);
 	bst.insert(1);
 
-	bst.erase(2);
- 	system("pause");
+	system("pause");
 	return 0;
 }
