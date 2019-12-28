@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-namespace wf {
+namespace tdd {
 
 	enum State {
 		EMPTY,
