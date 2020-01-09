@@ -25,7 +25,7 @@ void FindNumsAppearOnce(vector<int> data)
 }
 
 
-int main()  
+int main1()  
 {
 	vector<int> data = { 2,4,3,6,3,2,5,5 };
 	FindNumsAppearOnce(data);
