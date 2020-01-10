@@ -7,28 +7,29 @@ using namespace std;
 
 void reOrderArray(vector<int> &array)
 {
-	vector<int> ret;
-	for (int i = 0; i < array.size(); i++)
+	int num = array.size();
+	for (int i = 0; i<num; i++)//找到第一个偶数位置
 	{
-		if (array[i] % 2 != 0)
+		int temp;
+		if ((array[i] % 2) == 0)//偶数
 		{
-			ret.push_back(array[i]);
+			for (int j = i; j < num; j++)
+			{
+				if ((array[j] % 2) == 1)//找到偶数后第一个奇数位置，从第一个偶数位开始后移
+				{
+					temp = array[j];
+					while (j > i)
+					{
+						array[j] = array[j - 1];//将第一个偶数位开始后移
+						j--;
+					}
+					array[j] = temp;//将该奇数前移到第一个偶数位
+					i++;//第一个偶数位置后移一次
+				}
+			}
+			break;
 		}
 	}
-
-	for (int i = 0; i < array.size(); i++)
-	{
-		if (array[i] % 2 == 0)
-		{
-			ret.push_back(array[i]);
-		}
-	}
-
-	for (auto & e : ret)
-	{
-		cout << e << " ";
-	}
-	cout << endl;
 }
 
 int main()

@@ -1,3 +1,4 @@
+//±’…¢¡–
 #pragma once
 #include<map>
 #include<vector>
@@ -38,7 +39,7 @@ public:
 	}
 };
 
-template<class K, class V, class SW>
+template<class K, class V, class SW = dealInt>
 class hashTable
 {
 	struct elem
@@ -56,10 +57,14 @@ class hashTable
 
 	vector<elem> m_table;
 	size_t m_size;
+
+	static long long s_m_primetable[30];
+	int m_primePos;
 public:
-	hashTable(size_t capacity = 11):
+	hashTable(size_t capacity = s_m_primetable[0]) :
 		m_table(capacity),
-		m_size(0)
+		m_size(0),
+		m_primePos(0)
 		{
 
 		}
@@ -76,9 +81,30 @@ private:
 		return func(key) % capacity();
 	}
 
+	void reserve()
+	{
+		vector<elem> tmp;
+
+		m_table.swap(tmp);
+		m_table.resize(s_m_primetable[++m_primePos]);
+
+		m_size = 0;
+		for (auto & e : tmp)
+		{
+			if (e.state == EXIST)
+			{
+				insert(e.m_val);
+			}
+		}
+	} 
 public:
 	bool insert(const pair<K, V> & val)
 	{
+		if ((long long)size() * 100 / capacity() >= 75)
+		{
+			reserve();
+		}
+
 		int n = hashFunc(val.first);
 
 		while (m_table[n].m_state == EXIST)
@@ -152,6 +178,16 @@ public:
 		m_size = ht.m_size;
 		ht.m_size = tmp;
 	}
+};
+template<class K, class V, class SW>
+long long hashTable<K, V, SW> ::s_m_primetable[30] =
+{
+	11,			    23,			    47,				 89,			      179,
+	353,			    709,			    1409,			 2819,		      5639,
+	11273,         22531,		    45061,			 90121,          180233,
+	360457,       720899,		1441807,		 2883593,       5767169,
+	11534351,   23068673,    46137359,	 92274737,     184549429,
+	369098771, 738197549, 1476395029, 2952790033, 4294967291u
 };
 
 };
