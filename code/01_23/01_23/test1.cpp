@@ -22,7 +22,7 @@ vector<int> plusOne(vector<int>& digits)
 	return digits;
 }
 
-int main()
+int main1()
 {
 	vector<int> digits = { 3,2,1,3 };
 	vector<int> res = plusOne(digits);
