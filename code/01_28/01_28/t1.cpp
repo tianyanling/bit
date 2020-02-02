@@ -57,7 +57,7 @@ int myAtoi(string str)
 	int j = 0;
 	while (j < tmp.size())//将字符串转换为整数
 	{
-		res =res*10 + tmp[j] - '0';
+		res = res * 10 + tmp[j] - '0';
 		j++;
 
 		if (res >= 2147483648)//判断是否越界
