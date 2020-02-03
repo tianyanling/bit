@@ -69,7 +69,7 @@ int myAtoi(string str)
 	return sig == 0 ? -res : res;
 }
 
-int main()
+int main1()
 {
 	string str = "18446744073709551617";
 
