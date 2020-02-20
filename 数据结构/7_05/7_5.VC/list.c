@@ -74,6 +74,7 @@ void ListPrint(List* plist)
 	}
 	printf("head\n");
 }
+
 void ListDestory(List* plist)
 {
 	ListNode *tmp = plist->_head->_prev;
