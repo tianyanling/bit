@@ -15,9 +15,17 @@ void test()
 	cout << "decrpet: " << rsa.decrept(original, key.m_dkey, key.m_pkey) << endl;
 }
 
+void testRSA()
+{
+	RSA rsa;
+
+	rsa.ecrept("test.txt", "test.ecrept.txt");
+	rsa.decrept("test.ecrept.txt", "test.decrept.txt");
+}
 int main()
 {
-	test();
+	//test();
+	testRSA();
 	system("pause");
 	return 0;
 }

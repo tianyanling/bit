@@ -1,7 +1,74 @@
 #include"rsa.h"
 #include<iostream>
 #include<ctime>
+#include<fstream>
 #include<cmath>
+
+RSA::RSA()
+{
+	getKeys();
+}
+
+void RSA::ecrept(const char * filename, const char * fileout)
+{
+	std::ifstream fin(filename, std::ifstream::binary);//模式，有二进制模式/文本文件模式
+	std::ofstream fout(fileout, std::ifstream::binary);
+
+	if (!fin.is_open())
+	{
+		perror("input file open failed!");
+		return;
+	}
+	char* buffer = new char[NUMBER];
+	DataType* bufferout = new DataType[NUMBER];
+	while (!fin.eof())
+	{
+		fin.read(buffer, NUMBER);
+		//gcount()可以获取最近一次读取的字节数
+		int curNum = fin.gcount();
+		for (int i = 0; i < curNum; i++)
+		{
+			bufferout[i] = ecrept((DataType)buffer[i], m_key.m_ekey, m_key.m_pkey);
+		}
+		fout.write((char*)bufferout, curNum * sizeof(DataType));
+	}
+	delete[] bufferout;
+	delete[] buffer;
+
+	fin.close();
+	fout.close();
+}
+
+void RSA::decrept(const char * filename, const char * fileout)
+{
+	std::ifstream fin(filename, std::ifstream::binary);//模式，有二进制模式/文本文件模式
+	std::ofstream fout(fileout, std::ifstream::binary);
+
+	if (!fin.is_open())
+	{
+		perror("input file open failed!");
+		return;
+	}
+	DataType* buffer = new DataType[NUMBER];
+	char* bufferout = new char[NUMBER];
+	while (!fin.eof())
+	{
+		fin.read((char*)buffer, NUMBER*sizeof(DataType));
+		//gcount()可以获取最近一次读取的字节数
+		int num = fin.gcount();//实际读取的字节
+		num /= sizeof(DataType);
+		for (int i = 0; i < num; i++)
+		{
+			bufferout[i] = decrept(buffer[i], m_key.m_dkey, m_key.m_pkey);
+		}
+		fout.write(bufferout, num);
+	}
+	delete[] bufferout;
+	delete[] buffer;
+
+	fout.close();
+	fin.close();
+}
 
 void RSA::getKeys()
 {

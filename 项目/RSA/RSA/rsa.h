@@ -1,5 +1,5 @@
 #pragma once
-
+#define NUMBER 256
 typedef long DataType;
 
 struct Key
@@ -23,6 +23,9 @@ class RSA
 {
 	Key m_key;
 public:
+	RSA();
+	void ecrept(const char * filename, const char * fileout);
+	void decrept(const char * filename, const char * fileout);
 	DataType ecrept(DataType data, DataType ekey, DataType pkey);//º”√‹
 	DataType decrept(DataType data, DataType dkey, DataType pkey);//Ω‚√‹
 	DataType getPrime();

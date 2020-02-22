@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bigint.h" />
     <ClInclude Include="rsa.h" />
   </ItemGroup>
   <ItemGroup>
