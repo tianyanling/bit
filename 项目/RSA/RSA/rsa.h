@@ -1,6 +1,18 @@
 #pragma once
+#include<iostream>
+#include<string>
+#include<ctime>
+#include<fstream>
+#include<cmath>
+#include<boost/multiprecision/cpp_int.hpp>
+#include<boost/multiprecision/random.hpp>
+#include<boost/multiprecision/miller_rabin.hpp>
+using namespace std;
+
 #define NUMBER 256
-typedef long DataType;
+
+typedef boost::multiprecision::int1024_t DataType;
+namespace brdm = boost::random;
 
 struct Key
 {
@@ -30,11 +42,13 @@ public:
 	DataType decrept(DataType data, DataType dkey, DataType pkey);//解密
 	DataType getPrime();
 	bool isPrime(DataType data);
+	bool isPrimeBigInt(DataType data);
 	DataType getPkey(DataType prime1, DataType prime2);//求n
 	DataType getOrla(DataType prime1, DataType prime2);
 	DataType getEkey(DataType orla);
 	DataType getDkey(DataType ekey, DataType orla);
 	DataType getGcd(DataType data1, DataType data2);//获取最大公约数
+	DataType exGcd(DataType a, DataType b, DataType &x, DataType& y);
 	void getKeys();
 	Key getallKey();
 };

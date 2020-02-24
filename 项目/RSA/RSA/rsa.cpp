@@ -1,8 +1,4 @@
 #include"rsa.h"
-#include<iostream>
-#include<ctime>
-#include<fstream>
-#include<cmath>
 
 RSA::RSA()
 {
@@ -59,7 +55,7 @@ void RSA::decrept(const char * filename, const char * fileout)
 		num /= sizeof(DataType);
 		for (int i = 0; i < num; i++)
 		{
-			bufferout[i] = decrept(buffer[i], m_key.m_dkey, m_key.m_pkey);
+			bufferout[i] = (char)decrept(buffer[i], m_key.m_dkey, m_key.m_pkey);
 		}
 		fout.write(bufferout, num);
 	}
@@ -112,13 +108,16 @@ DataType RSA::decrept(DataType data, DataType dkey, DataType pkey)
 
 DataType RSA::getPrime()
 {
-	srand(time(NULL));//随机种子
+	//srand(time(NULL));//随机种子
 	DataType prime;
+	brdm::mt19937 gen(time(NULL));
+	brdm::uniform_int_distribution<DataType> dist(0, DataType(1) << 256);
 
 	while (true)
 	{
-		prime = rand() % 100 + 2;//不产生0和1
-		if (isPrime(prime))
+		prime = dist(gen);
+		//std::cout << "BigInt Random:" << prime << std::endl;
+		if (isPrimeBigInt(prime))
 		{
 			break;
 		}
@@ -143,6 +142,19 @@ bool RSA::isPrime(DataType data)
 	return true;
 }
 
+bool RSA::isPrimeBigInt(DataType data)
+{
+	brdm::mt11213b gen(time(NULL));
+	if (miller_rabin_test(data, 25, gen))
+	{
+		if (miller_rabin_test((data - 1) / 2, 25, gen));
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 DataType RSA::getPkey(DataType prime1, DataType prime2)
 {
 	return prime1*prime2;
@@ -155,13 +167,16 @@ DataType RSA::getOrla(DataType prime1, DataType prime2)
 
 DataType RSA::getEkey(DataType orla)
 {
-	srand(time(NULL));
+	//srand(time(NULL));
+	brdm::mt19937 gen(time(NULL));
+	brdm::uniform_int_distribution<DataType> dist(2, orla);
 
 	DataType ekey;
 	while (true)
 	{
-		ekey = rand() % orla;
-		if (ekey > 1 && getGcd(ekey, orla) == 1)//两个数的最大公约数为1表示互质
+		//ekey = rand() % orla;
+		ekey = dist(gen);
+		if (getGcd(ekey, orla) == 1)//两个数的最大公约数为1表示互质
 		{
 			return ekey;
 		}
@@ -170,6 +185,11 @@ DataType RSA::getEkey(DataType orla)
 
 DataType RSA::getDkey(DataType ekey, DataType orla)
 {
+	DataType x = 0, y = 0;
+	exGcd(ekey, orla, x, y);
+	//变换，让解密秘钥是一个比较小的正值
+	return (x% orla + orla) % orla;
+	/*
 	DataType dkey = orla / ekey;
 	while (true)
 	{
@@ -179,6 +199,7 @@ DataType RSA::getDkey(DataType ekey, DataType orla)
 		}
 		dkey++;
 	}
+	*/
 }
 
 //辗转相除法求最大公约数
@@ -192,4 +213,19 @@ DataType RSA::getGcd(DataType data1, DataType data2)
 		data2 = residual;
 	}
 	return data2;
+}
+
+DataType RSA::exGcd(DataType a, DataType b, DataType &x, DataType& y)
+{
+	if (b == 0)
+	{
+		x = 1;
+		y = 0;
+		return a;
+	}
+	DataType gcd = exGcd(b, a%b, x, y);
+	DataType x1 = x, y1 = y;
+	x = y1;
+	y = x1 - a / b *y1;
+	return gcd;
 }
